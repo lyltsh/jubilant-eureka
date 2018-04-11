@@ -10,7 +10,6 @@ public class testTenuringThreshold2 {
 
     /**
      * VM参数：-verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=15 -XX:+PrintTenuringDistribution -XX:+UseSerialGC
-     *
      */
     @SuppressWarnings("unused")
     public static void doTenuringThreshold2() {
@@ -22,8 +21,17 @@ public class testTenuringThreshold2 {
         allocation4 = null;
         allocation4 = new byte[4 * _1MB];
     }
-    public static void main(String[] args){
-        doTenuringThreshold2();
+
+    public static void main(String[] args) {
+        //doTenuringThreshold2();
+
+        String s1 = "Programming";
+        String s2 = new String("Programming");
+        String s3 = "Program" + "ming";
+        System.out.println(s1 == s2);
+        System.out.println(s1 == s3);
+        System.out.println(s1 == s1.intern());
+
     }
 }
 
