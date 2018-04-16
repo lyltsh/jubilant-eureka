@@ -29,8 +29,8 @@ class Test {
             try {
                 MethodType mt = MethodType.methodType(void.class);
                 MethodHandle mh = lookup().findSpecial(GrandFather.class,
-                        "thinking", mt, getClass());
-                mh.invoke(this);
+                        "thinking", mt, getClass()).bindTo(GrandFather.class);
+                mh.invokeExact(this);
             } catch (Throwable e) {
             }
         }
