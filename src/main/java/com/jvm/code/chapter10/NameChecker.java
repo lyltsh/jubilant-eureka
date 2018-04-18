@@ -15,7 +15,8 @@ import static javax.lang.model.element.Modifier.STATIC;
 import static javax.tools.Diagnostic.Kind.WARNING;
 
 /**
- * @Description: 程序名称规范的编译器插件：
+ * @Description:
+ * 程序名称规范的编译器插件：
  * 如果程序命名不合规范，将会输出一个编译器的WARNING信息
  * @Author: leiyulin
  * @date: 2018/4/16
