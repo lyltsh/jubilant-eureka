@@ -9,7 +9,7 @@ public class T4MyThread extends Thread {
     public int count = 5;
 
     @Override
-    public void run() {
+    synchronized public void run() {
         super.run();
         --count;
         System.out.println("run by" + this.currentThread().getName()
