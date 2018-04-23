@@ -10,6 +10,6 @@ public class T8MythreadRun1 {
         T8Mythread1 mythread = new T8Mythread1();
         System.out.println("begin =" + System.currentTimeMillis());
         mythread.run();
-        System.out.println("end   =" + System.currentTimeMillis());
+        System.out.println("end =" + System.currentTimeMillis());
     }
 }

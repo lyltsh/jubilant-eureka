@@ -11,6 +11,7 @@ public class T8Mythread1 extends Thread{
         try {
             System.out.println("run threadName="
                     + this.currentThread().getName() + " begin");
+            System.out.println(this.currentThread().getId());
             Thread.sleep(2000);
             System.out.println("run threadName="
                     + this.currentThread().getName() + " end");
