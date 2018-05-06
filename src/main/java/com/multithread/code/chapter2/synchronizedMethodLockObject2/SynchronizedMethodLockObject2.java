@@ -18,9 +18,9 @@ public class SynchronizedMethodLockObject2 extends Thread {
         }
     }
 
-    synchronized public void methodB() {
+     public void methodB() {
         try {
-            System.out.println("begin method threadName="
+            System.out.println("begin methodB threadName="
                     + Thread.currentThread().getName()
                     + " begin time " + System.currentTimeMillis());
             Thread.sleep(5000);

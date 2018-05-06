@@ -7,12 +7,12 @@ package com.multithread.code.chapter2.synchronizedMethodLockObject;
  */
 public class SynchronizedMethodLockObject extends Thread {
 
-     synchronized public void methodA() {
+    synchronized public void methodA() {
         try {
             System.out.println("begin methodA threadName="
                     + Thread.currentThread().getName());
             Thread.sleep(5000);
-            System.out.println(Thread.currentThread().getName()+" end");
+            System.out.println(Thread.currentThread().getName() + " end");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
