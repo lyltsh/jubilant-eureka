@@ -13,7 +13,7 @@ public class SynNotExtendsSub extends SynNotExtendsMain {
                     + Thread.currentThread().getName() + " time="
                     + System.currentTimeMillis());
             Thread.sleep(5000);
-            System.out.println("int sub next steep sleep   end threadName="
+            System.out.println("int sub next steep sleep end threadName="
                     + Thread.currentThread().getName() + " time="
                     + System.currentTimeMillis());
             super.serviceMethod();
