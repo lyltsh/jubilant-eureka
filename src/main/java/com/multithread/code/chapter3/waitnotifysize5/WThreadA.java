@@ -1,7 +1,5 @@
 package com.multithread.code.chapter3.waitnotifysize5;
 
-import javax.annotation.processing.SupportedSourceVersion;
-
 /**
  * @Description:
  * @Author: leiyulin
