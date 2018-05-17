@@ -16,7 +16,7 @@ public class SportsmanB {
         try {
             synchronized (lock){
                 System.out.println("value:"+BadmintonObject.value);
-                while (!BallPossession.Sport_B.equals(BadmintonObject.value)){
+                while (BallPossession.Sport_B.equals(BadmintonObject.value)){
                     System.out.println("球权在"+Thread.currentThread().getName()+", Waiting");
                     lock.wait();
                 }
