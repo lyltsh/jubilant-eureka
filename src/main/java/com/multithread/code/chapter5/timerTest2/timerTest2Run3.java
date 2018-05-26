@@ -18,7 +18,7 @@ public class timerTest2Run3 {
         @Override
         public void run() {
             System.out.println("A运行了！时间为：" + new Date());
-            timer.cancel();
+//            timer.cancel();
         }
     }
 
@@ -38,8 +38,8 @@ public class timerTest2Run3 {
             Date dateRef = sdf.parse(dateString);
             System.out.println("字符串时间：" + dateRef.toLocaleString() + " 当前时间："
                     + new Date().toLocaleString());
-            timer.schedule(taskA, dateRef, 4000);
-            timer.schedule(taskB, dateRef, 4000);
+            timer.schedule(taskA, 4000);
+            timer.schedule(taskB, 4000);
         } catch (ParseException e) {
             e.printStackTrace();
         }
